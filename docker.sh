@@ -5,8 +5,7 @@ function main_menu() {
     echo "Select an option:"
     echo "1. Manage Docker Containers"
     echo "2. Manage Docker Images"
-    echo "3. Execute Docker Command"
-    echo "4. Exit"
+    echo "3. Exit"
 
     read -p "Enter your choice: " choice
 
@@ -71,10 +70,12 @@ function docker_container_menu() {
 }
 
 function docker_start() {
+    clear
     # Print all Docker containers with a number for ID
-    docker ps -a --format "table {{.ID}}\t{{.Names}}"
+    docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Image}}" | awk '{print NR-1,$0}'
 
     # Prompt user to enter the number of the Docker container to start
+    echo ""
     read -p "Enter the number of the Docker container to start: " container_number
 
     # Start the Docker container based on the selected number
@@ -201,8 +202,17 @@ function check_docker_status() {
             echo "Docker is not running. Exiting..."
             exit 1
         fi
+    else
+                # Check if user has sudo permission
+        if [ "$(id -u)" != "0" ]; then
+                echo "You don't have sudo permission. Please run the script as root or with sudo."
+                exit 1
+        fi
+        return 0
     fi
 }
 
-check_docker_status
-main_menu
+if check_docker_status; then
+    main_menu
+fi
+
