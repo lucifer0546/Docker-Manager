@@ -15,13 +15,23 @@ This script provides a set of functions for managing Docker containers. It allow
 
 ## Installation
 
-To use the script, clone or download it to your local machine and ensure it has execute permissions.
+To install the Docker management script, follow these steps:
 
-```bash
-chmod +x docker.sh
-```
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/lucifer0546/DockerGui.git
+   cd DockerGui
+   ```
+
+2. **Run the Install Script**
+   Make sure the `install.sh` script is executable:
+   ```bash
+   chmod +x install.sh
+   ./install.sh
+   ```
 
 ## Usage
+After installation, you can run the script using the command `docker-manager`.
 
 The script includes the following functions:
 
@@ -33,11 +43,22 @@ The script includes the following functions:
 
 - `docker_restart`: Restarts the selected Docker container. It first invokes `choose_docker_container` to select a container.
 
-To run any of these functions, execute the script followed by the function name:
+## Uninstallation
 
-```bash
-./docker.sh docker_start
-```
+To uninstall the script, follow these steps:
+
+1. **Navigate to the Repository Directory**
+   If you're not already in the directory:
+   ```bash
+   cd DockerGui
+   ```
+
+2. **Run the Uninstall Script**
+   Make sure the `uninstall.sh` script is executable:
+   ```bash
+   chmod +x uninstall.sh
+   ./uninstall.sh
+   ```
 
 ## Note
 
