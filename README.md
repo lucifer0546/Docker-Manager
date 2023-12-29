@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="images/docker.png" alt="Docker Whale Manager">
+  <img src="images/docker_whale.png" alt="Docker Whale Manager">
 </div>
 
 
