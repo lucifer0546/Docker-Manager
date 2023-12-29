@@ -39,6 +39,29 @@ To run any of these functions, execute the script followed by the function name:
 - Ensure you have the necessary permissions to execute Docker commands.
 - The script assumes Docker is installed and configured on your system.
 
+## Todo
+- Status Overview: Add a function to display an overview of all containers, including their status (running, exited), ports, images, and creation dates.
+
+- Health Check Functionality: Integrate a health check feature that reports on the health of running containers based on their health status in Docker.
+
+- Search Functionality: Implement a search feature that allows users to find containers based on names, IDs, or other criteria.
+
+- Update Notification: A function to check for the latest Docker images for the containers and suggest or automate updates.
+
+- Backup and Restore: Provide options to easily backup and restore container data, which is crucial for data integrity and recovery.
+
+- Resource Monitoring: Add features to monitor and report on the resource usage (CPU, memory) of each container, which is essential for performance tuning.
+
+- Custom Configuration Management: Allow users to save and manage custom configurations for containers, making it easier to deploy containers with preferred settings.
+
+- Network Management: Include options to manage Docker networks, such as creating, inspecting, and removing networks.
+
+- Security Scans: Integrate with tools to perform security scans on containers and images to ensure they are free of known vulnerabilities.
+
+- User Access Control: Implement user access control to allow different levels of permissions for different users of the script, enhancing security.
+
+- Logging and Audit Trails: Maintain logs of actions performed through the script for auditing and troubleshooting purposes. 
+
 ## License
 
 This script is released under the MIT License.

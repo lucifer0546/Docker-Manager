@@ -338,6 +338,4 @@ function execute_docker_command() {
     sudo docker $command
 }
 
-# Rest of the code...
-
 main_menu
