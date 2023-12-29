@@ -19,8 +19,8 @@ To install the Docker management script, follow these steps:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/lucifer0546/DockerGui.git
-   cd DockerGui
+   git clone https://github.com/lucifer0546/Docker-Manager.git
+   cd Docker-Manager
    ```
 
 2. **Run the Install Script**
@@ -50,7 +50,7 @@ To uninstall the script, follow these steps:
 1. **Navigate to the Repository Directory**
    If you're not already in the directory:
    ```bash
-   cd DockerGui
+   cd Docker-Manager
    ```
 
 2. **Run the Uninstall Script**
