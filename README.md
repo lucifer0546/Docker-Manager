@@ -1,4 +1,9 @@
 
+<div align="center">
+  <img src="images/docker.png" alt="Docker Whale Manager">
+</div>
+
+
 # Docker Management Script
 
 This script provides a set of functions for managing Docker containers. It allows users to interact with Docker containers by offering functionalities to start, stop, and restart containers.
